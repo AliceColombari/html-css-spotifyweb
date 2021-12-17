@@ -21,19 +21,46 @@ a{
 a:hover{
     color: #fff;
 }
+
+.btn{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    float: right;
+    margin-right: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn:hover{
+    color: #999;
+    border: 1px solid #999;
+    transform: scale(1.1);
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.flex{
+    display: flex;
+}
 /* FINE REGOLE GENERALI */
 
 /* REGOLE MAIN NAV */
 main{
-    display: flex;
     height: 100%;
 }
 
 .main-nav{
-    width: 250px;
+    width: 200px;
     height: 100%;
     background-color: #000;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -126,4 +153,81 @@ main{
     color: #fff;
     border-radius: 50%;
     background-color: #999;
+}
+/* FINE REGOLE MAIN NAV */
+
+/* REGOLE MAIN CONTENT */
+.content{
+    width: calc(100% - 200px);
+}
+/* REGOLE MAIN CONTENT UPGRATE */
+.container-upgrate{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100px;
+    width: calc(100% - 200px);
+    z-index: 1;
+}
+
+.content .container-upgrate .upgrate{
+    display: inline-block;
+    margin-top: 20px;
+}
+/* REGOLE MAIN CONTENT NAV PRINCIPALE */
+.main-content-nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+
+.main-content-nav ul li{
+    font-size: 12px;
+    line-height: 50px;
+    margin: 0px 20px;
+}
+
+.main-content-nav-list{
+    margin-top: 100px;
+}
+/* REGOLE MAIN CONTENT CONTAINER PLAYED */
+.container-played h2{
+    color: #000;
+    padding: 20px 0px;
+    margin-left: 20px;
+}
+
+.played-list{
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.played-element{
+    flex-basis: calc(100% / 6);
+    margin: 0px 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+.played-element .cover img{
+    width: 100%;
+}
+
+.played-element:hover{
+    cursor: pointer;
+}
+
+.played-element .cover-text h3{
+    color: #000;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.played-element .cover-text p{
+    color: #999;
+    font-size: 12px;
+    padding-top: 10px;
 }
