@@ -159,6 +159,10 @@ main{
 /* REGOLE MAIN CONTENT */
 .content{
     width: calc(100% - 200px);
+    height: 100%;
+    background-color: #141922;
+    overflow: auto;
+    padding-top: 100px;
 }
 /* REGOLE MAIN CONTENT UPGRATE */
 .container-upgrate{
@@ -188,13 +192,9 @@ main{
     line-height: 50px;
     margin: 0px 20px;
 }
-
-.main-content-nav-list{
-    margin-top: 100px;
-}
 /* REGOLE MAIN CONTENT CONTAINER PLAYED */
 .container-played h2{
-    color: #000;
+    color: #fff;
     padding: 20px 0px;
     margin-left: 20px;
 }
@@ -221,7 +221,7 @@ main{
 }
 
 .played-element .cover-text h3{
-    color: #000;
+    color: #fff;
     padding-top: 10px;
     line-height: 20px;
 }
