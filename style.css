@@ -1,3 +1,4 @@
+/* REGOLE GENERALI */
 *{
     margin: 0;
     padding: 0;
@@ -20,14 +21,16 @@ a{
 a:hover{
     color: #fff;
 }
+/* FINE REGOLE GENERALI */
 
-
+/* REGOLE MAIN NAV */
 main{
     display: flex;
+    height: 100%;
 }
 
 .main-nav{
-    width: 200px;
+    width: 250px;
     height: 100%;
     background-color: #000;
     display: flex;
@@ -46,12 +49,81 @@ main{
     vertical-align: middle;
     color: #999;
 }
-
+/* REGOLE MAIN NAV MENU */
 .main-nav .menu-nav a:hover img{
     color: #fff;
 }
 
-.menu-nav ul li a span {
+.menu-nav ul li{
+    padding: 5px 10px;
+}
+
+.here{
+    border-left: 2px solid #94dd25;
+    padding-left: 8px;
+}
+
+.menu-nav ul li:hover{
+    border-left: 2px solid #94dd25;
+    padding-left: 8px;
+}
+
+.menu-text{
     font-size: 15px;
     font-weight: 600;
+}
+
+/* REGOLE MAIN NAV MENU PLAYLIST */
+.container-playlist-nav{
+    padding: 0px 10px;
+}
+
+.container-playlist-nav h3{
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.container-playlist-nav a i{
+    font-size: 30px;
+    vertical-align: middle;
+    padding-right: 20px; 
+}
+
+.playlist-nav ul li{
+    padding: 10px 0px;
+}
+
+.playlist-nav{
+    overflow-y: auto;
+    min-height: 50px;
+    padding: 0px 10px;
+}
+/* REGOLE MAIN NAV MENU PLAYLIST BOTTOM */
+.main-nav .bottom-nav{
+    padding: 0px 10px;
+}
+
+.main-nav .bottom-nav .download-nav{
+    border-bottom: 1px solid #999;
+    line-height: 40px;
+}
+
+.main-nav .bottom-nav .download-nav a{
+    padding: 5px 0px;
+}
+
+.main-nav .bottom-nav .download-nav img{
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+    color: #999;
+}
+
+.main-nav .bottom-nav .profile-nav img{
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #999;
 }
