@@ -490,7 +490,6 @@ footer{
 @media screen and (max-width: 600px){
     
     /* RESPONSIVE NAV */
-    
     nav.main-nav{
         width: 50px;
         padding: 10px;
@@ -549,10 +548,23 @@ footer{
     .main-nav .bottom-nav .download-nav{
         border-bottom: none;
     }
-    /* RESPONSIVE MAIN CONTENT */
 
+    /* RESPONSIVE MAIN CONTENT */
     .content .container-upgrate{
         width: calc(100% - 50px);
+    }
+
+    .controller .player-button ul li a{
+        font-size: 16px;
+        padding: 0px 5px;
+    }
+
+    .big a{
+        font-size: 20px;
+    }
+
+    .controller{
+        padding:  0px 15px;
     }
 }
 
@@ -595,9 +607,9 @@ footer{
 /* MEDIA QUERY PER RIDIMENSIONARE IMG PER RESPONSIVE MEDIUM */
 
 @media (max-width: 768px){
-    .container-footer .song .song-cover{
+    /* .container-footer .song .song-cover{
         height: 60%;
-    }
+    } */
 
     .container-footer .song .song-name{
         margin-right: 0px;
@@ -620,18 +632,12 @@ footer{
     }
 }
 
-@media (max-width: 330px){
-    .container-footer .song .song-save{
+@media (max-width: 388px){
+    .audio-list{
         display: none;
     }
 }
-
 /* MEDIA QUERY PER RIDIMENSIONARE FOOTER */
-@media (max-width: 992px){
-    .controller{
-        padding:  0px 25px;
-    }
-}
 
 @media (max-width: 768px){
     .controller .player-button ul li a{
@@ -648,49 +654,21 @@ footer{
 
     .player-time .active-bar{
         font-size: 10px;
-        padding-right: 10px;
+        /* padding-right: 10px; */
     }
 
     .player-time .time-dx{
         font-size: 10px;
-        padding-right: 10px;
-    }
-}
-
-@media (max-width: 600px){
-    .controller .player-button ul li a{
-        font-size: 12px;
-        padding: 0px 5px;
+        /* padding-right: 10px; */
     }
 
-    .big a{
-        font-size: 16px;
-    }
-
-    .controller{
-        padding:  0px 15px;
+    .song-save{
+       display: none;
     }
 }
 
 @media (max-width: 424px){
     .controller .player-button ul li a{
         padding: 0px 2px;
-    }
-}
-
-@media (max-width: 880px){
-    .audio .audio-list .audio-volume{
-        width: 100%;
-    }
-
-    .audio .audio-list{
-        justify-content: space-around;
-    }
-
-}
-
-@media (max-width: 388px){
-    .audio-list{
-        display: none;
     }
 }
