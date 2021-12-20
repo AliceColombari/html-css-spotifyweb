@@ -79,6 +79,7 @@ main{
 .logo-nav{
     margin-bottom: 10px;
     padding: 20px;
+    z-index: 2;
 }
 
 .logo-nav .logo-piccolo{
@@ -537,10 +538,17 @@ footer{
         padding: 0px;
     }
 
+    .content{
+        width: 100%;
+    }
+
     .main-content-nav{
         width: calc(100% - 50px);
     }
 
+    .main-nav .bottom-nav .download-nav{
+        border-bottom: none;
+    }
     /* RESPONSIVE MAIN CONTENT */
 
     .content .container-upgrate{
@@ -678,10 +686,11 @@ footer{
     .audio .audio-list{
         justify-content: space-around;
     }
+
 }
 
 @media (max-width: 388px){
-    .audio-item{
+    .audio-list{
         display: none;
     }
 }
