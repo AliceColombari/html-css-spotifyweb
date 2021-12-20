@@ -53,6 +53,12 @@ a:hover{
 /* FINE REGOLE GENERALI */
 
 /* REGOLE MAIN NAV */
+#container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
 main{
     height: 100%;
 }
@@ -230,4 +236,39 @@ main{
     color: #999;
     font-size: 12px;
     padding-top: 10px;
+}
+/* REGOLE MAIN CONTENT CONTAINER CREATE */
+.container-create h2{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.container-create p {
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    margin-left: 20px;
+  }
+
+/* REGOLE MAIN CONTENT CONTAINER ARTIST */
+.container-artist h2{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.container-artist p {
+    color: #999;
+    font-size: 12px;
+    padding-bottom: 25px;
+    margin-left: 20px;
+  }
+
+  .container-artist .cover-rounded img{
+    width: 100%;
+    border-radius: 50%;
 }
