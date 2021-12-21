@@ -50,20 +50,20 @@ a:hover{
 .flex{
     display: flex;
 }
-/* FINE REGOLE GENERALI */
 
-/* REGOLE MAIN NAV */
 #container{
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
+/* FINE REGOLE GENERALI */
 
+/* REGOLE MAIN */
 main{
     display: flex;
     height: calc(100vh - 90px);
 }
-
+/* REGOLE MAIN NAV */
 .main-nav{
     width: 250px;
     height: 100%;
@@ -72,7 +72,7 @@ main{
     justify-content: space-between;
     min-height: 400px;
 }
-
+/* REGOLE MAIN NAV LOGO GRANDE E PICCOLO */
 .logo-nav{
     margin-bottom: 10px;
     padding: 20px;
@@ -90,6 +90,7 @@ main{
     color: #999;
 }
 
+/* REGOLE TOP E BOTTOM DELLA NAV */
 .top-nav{
     height: calc(100% - 100px);
     display: flex;
@@ -99,6 +100,8 @@ main{
 .bottom-nav{
     height: 100px;
 }
+/* FINE REGOLE TOP E BOTTOM DELLA NAV */
+
 /* REGOLE MAIN NAV MENU */
 .main-nav .menu-nav a:hover img{
     color: #fff;
@@ -108,6 +111,11 @@ main{
     padding: 5px 10px;
 }
 
+.menu-text{
+    font-size: 15px;
+    font-weight: 600;
+}
+/* REGOLE MAIN NAV MENU BARRA VERDE + HOVER */
 .here{
     border-left: 2px solid #94dd25;
     padding-left: 8px;
@@ -118,12 +126,8 @@ main{
     padding-left: 8px;
 }
 
-.menu-text{
-    font-size: 15px;
-    font-weight: 600;
-}
 
-/* REGOLE MAIN NAV MENU PLAYLIST */
+/* REGOLE MAIN NAV PLAYLIST */
 .container-playlist-nav{
     padding: 0px 10px;
 }
@@ -138,7 +142,7 @@ main{
     vertical-align: middle;
     padding-right: 10px; 
 }
-
+/* REGOLE MAIN NAV LIST PLAYLIST */
 .playlist-nav ul li{
     padding: 10px 0px;
 }
@@ -147,11 +151,13 @@ main{
     overflow-y: auto;
     padding: 0px 10px;
 }
-/* REGOLE MAIN NAV MENU PLAYLIST BOTTOM */
+
+
+/* REGOLE MAIN NAV BOTTOM */
 .main-nav .bottom-nav{
     padding: 0px 10px;
 }
-
+/* REGOLE MAIN NAV BOTTOM DOWNLOAD */
 .main-nav .bottom-nav .download-nav{
     border-bottom: 1px solid #999;
     line-height: 40px;
@@ -167,7 +173,7 @@ main{
     margin-right: 20px;
     color: #999;
 }
-
+/* REGOLE MAIN NAV BOTTOM PROFILE */
 .main-nav .bottom-nav .profile-nav {
     line-height: 50px;
 }
@@ -182,7 +188,9 @@ main{
 }
 /* FINE REGOLE MAIN NAV */
 
-/* REGOLE MAIN CONTENT */
+
+
+/* REGOLE CONTENUTO CENTRALE */
 .content{
     width: calc(100% - 200px);
     height: 100%;
@@ -190,7 +198,7 @@ main{
     overflow: auto;
     padding-top: 100px;
 }
-/* REGOLE MAIN CONTENT UPGRATE */
+/* REGOLE UPGRATE */
 .container-upgrate{
     position: fixed;
     top: 0;
@@ -205,7 +213,7 @@ main{
     display: inline-block;
     margin-top: 20px;
 }
-/* REGOLE MAIN CONTENT NAV PRINCIPALE */
+/* REGOLE MENU CONTENUTO CENTRALE */
 .main-content-nav ul{
     display: flex;
     justify-content: center;
@@ -219,7 +227,7 @@ main{
     margin: 0px 20px;
     position: relative;
 }
-
+/* REGOLE MENU CONTENUTO CENTRALE LINEA VERDE SUL PRIMO ELEMENTO CON CLASSE ACTIVE-MENU */
 .main-content-nav .main-content-nav-list li a.active-menu::after{
     content: "";
     height: 2px;
@@ -230,7 +238,7 @@ main{
     left: 50%;
     transform: translateX(-50%);
 }
-
+/* REGOLE MENU CONTENUTO CENTRALE LINEA VERDE CON HOVER SU ALTRI ELEMENTI MENU*/
 .main-content-nav .main-content-nav-list li a:hover::after{
     content: "";
     height: 2px;
@@ -242,13 +250,13 @@ main{
     transform: translateX(-50%);
 }
 
-/* REGOLE MAIN CONTENT CONTAINER PLAYED */
+/* REGOLE RECENTLY PLAYED */
 .container-played h2{
     color: #fff;
     padding: 20px 0px;
     margin-left: 20px;
 }
-
+/* REGOLE RECENTLY PLAYED LIST */
 .played-list{
     flex-wrap: wrap;
     margin-left: 10px;
@@ -261,7 +269,7 @@ main{
     text-align: center;
     
 }
-
+/* REGOLE RECENTLY PLAYED IMMAGINI CON LAYOVER */
 .played-element .cover,
 .played-element .cover-rounded{
     position: relative;
@@ -296,7 +304,7 @@ main{
 .played-element:hover .cover-rounded .img-layover{
     display: block;
 }
-
+/* REGOLE RECENTLY PLAYED TESTO */
 .played-element .cover-text h3{
     color: #fff;
     padding-top: 10px;
@@ -308,7 +316,9 @@ main{
     font-size: 12px;
     padding-top: 10px;
 }
-/* REGOLE MAIN CONTENT CONTAINER CREATE */
+/* FINE REGOLE RECENTLY PLAYED */
+
+/* REGOLE CREATE */
 .container-create{
     display: flex;
     flex-direction: column;
@@ -327,8 +337,10 @@ main{
     margin-top: 10px;
     padding-bottom: 25px;
     margin-left: 20px;
-  }
-/* REGOLE MAIN CONTENT CONTAINER ARTIST */
+}
+/* FINE REGOLE CREATE */
+
+/* REGOLE ARTIST */
 .container-artist{
     display: flex;
     flex-direction: column;
@@ -347,13 +359,16 @@ main{
     padding-bottom: 25px;
     margin-left: 20px;
   }
-
+/* REGOLE ARTIST IMMAGINE ROTONDA */
 .container-artist .cover-rounded img{
     width: 100%;
     border-radius: 50%;
 }
+/* FINE REGOLE ARTIST */
 
-/* FOOTER */
+
+
+/* REGOLE GENERALI FOOTER */
 footer{
     width: 100%;
     height: 90px;
@@ -368,14 +383,8 @@ footer{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    /* text-align: center; */
 }
-
-.audio-bar:hover .active-bar{
-    color: #94dd25;
-}
-
-/* FOOTER COL SX */
+/* FOOTER BOX SINISTRA SONG */
 #container-footer .song{
     height: 100%;
     padding: 10px;
@@ -383,7 +392,7 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-
+/* REGOLE BOX SINISTRA SONG IMMAGINI */
 #container-footer .song .song-cover{
     height: 100%;
 }
@@ -392,7 +401,7 @@ footer{
     height: 100%;
     margin-right: 10px;
 }
-
+/* REGOLE BOX SINISTRA SONG TESTO */
 #container-footer .song .song-name h3{
     color: #fff;
     font-size: 12px;
@@ -404,7 +413,7 @@ footer{
     font-size: 10px;
     margin-right: 10px;
 }
-
+/* REGOLE BOX SINISTRA SONG ELEMENTI SAVE */
 .song-save{
     display: flex;
     justify-content: space-between;
@@ -414,7 +423,8 @@ footer{
     padding-right: 10px;
     padding-left: 30px;
 }
-/* FOOTER COL CENTER */
+
+/* REGOLE FOOTER BOX CENTRALE */
 #container-footer .controller{
     height: 100%;
     display: flex;
@@ -424,7 +434,7 @@ footer{
     flex-grow: 1;
     padding: 0px 50px;
 }
-
+/* REGOLE BOX CENTRALE ELEMENTI / BOTTONI */
 #container-footer .controller .player-button ul li{
     display: inline-block;
     padding: 0px 10px;
@@ -440,15 +450,15 @@ footer{
 #container-footer .controller .player-button ul li a:hover{
     color: #999;
 }
-
+/* BOTTONE PLAY */
 .big{
     font-size: 35px;
 }
-
+/* INGRANDIMENTO BOTTONE PLAY CON HOVER */
 .big:hover{
     transform: scale(1.2);
 }
-
+/* LINEA TEMPO */
 .player-time{
     display: flex;
     justify-content: space-between;
@@ -491,7 +501,7 @@ footer{
     font-weight: 600;
     color: #fff;
 }
-
+/* LINEA TEMPO CON CAMBIO COLORE */
 .time-bar .bar-point{
     position: absolute;
     top: 50%;
@@ -503,7 +513,7 @@ footer{
     background-color: #fff;
     display: none;
 }
-
+/* ATTIVAZIONE LINEA TEMPO CON CAMBIO COLORE */
 .time-bar:hover .bar-point{
     display: block;
 }
@@ -512,12 +522,12 @@ footer{
     background-color: #94dd25;
 }
 
-/* FOOTER COL DX */
+/* REGOLE FOOTER BOX DESTRA AUDIO */
 #container-footer .audio{
     width: 20%;
     padding: 10px;
 }
-
+/* BOX DESTRA AUDIO ELEMENTI */
 #container-footer .audio .audio-list{
     height: 100%;
     display: flex;
@@ -546,7 +556,7 @@ footer{
 .audio-item a:hover, .audio-volume a:hover{
     color: #999;
 }
-
+/* BOX DESTRA AUDIO LINEA VOLUME */
 .audio-bar{
     height: 40px;
     height: 4px;
@@ -564,7 +574,7 @@ footer{
     border-radius: 4px;
     background-color: #fff;
 }
-
+/* BOX DESTRA AUDIO LINEA VERDE VOLUME */
 .audio-bar .bar-point{
     position: absolute;
     top: 50%;
@@ -576,7 +586,7 @@ footer{
     background-color: #fff;
     display: none;
 }
-
+/* ATTIVAZIONE BOX DESTRA AUDIO LINEA VERDE VOLUME */
 .audio-bar:hover .bar-point{
     display: block;
 }
@@ -588,7 +598,7 @@ footer{
 
 
 /* RESPONSIVE CON MEDIA QUERY AL DI SOTTO DEI 600PX */
-@media (max-width: 600px){
+@media (min-width: 310px) and (max-width: 600px){
     /* MEDIA QUERY PER MODIFICARE CONTENITORE NAV DX */
     nav.main-nav{
         width: 50px;
@@ -689,7 +699,6 @@ footer{
     /* MEDIA QUERY PER MODIFICARE COL SX DIMENSIONI */
     #container-footer .song .song-cover img{
         height: 80%;
-
     }
 
     #container-footer .song{
@@ -738,7 +747,7 @@ footer{
     #container-footer .controller .player-button ul li{
         font-size: 15px;
         padding: 0px 2px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .big{
@@ -794,7 +803,7 @@ footer{
 
 
 /* RESPONSIVE CON MEDIA QUERY AL DI SOTTO DEI 768PX */
-@media (max-width:768px){
+@media (min-width: 600px) and (max-width:768px){
 
     /* MEDIA QUERY ELEMENTI AL CENTRO + RIDIMENSIONAMENTO TESTO COVER */
     .cover-text h3{
