@@ -314,6 +314,7 @@ main{
     width: 100%;
     border-radius: 50%;
 }
+
 /* FOOTER */
 footer{
     width: 100%;
@@ -346,7 +347,7 @@ footer{
 }
 
 #container-footer .song .song-cover{
-    height: 80%;
+    height: 100%;
 }
 
 #container-footer .song .song-cover img{
@@ -364,6 +365,11 @@ footer{
     color: #999;
     font-size: 10px;
     margin-right: 10px;
+}
+
+.song-save{
+    display: flex;
+    justify-content: space-between;
 }
 
 #container-footer .song .song-save .first{
@@ -611,8 +617,84 @@ footer{
     .cover-text h3{
         font-size: 12px;
     }
+
     /* MEDIA QUERY PER MODIFICARE CONTENIORE FOOTER */
-}
+    /* MEDIA QUERY PER MODIFICARE CONTENIORE FOOTER RIDIMENSIONAMENTO 3 SPAZI */
+    #container-footer .song{
+        flex-grow: 1;
+    }
+
+    #container-footer .controller{
+        flex-grow: 2;
+    }
+
+    #container-footer .audio{
+        flex-grow: 1;
+    }
+    /* MEDIA QUERY PER MODIFICARE COL SX DIMENSIONI */
+    #container-footer .song .song-cover img{
+        height: 80%;
+
+    }
+
+    #container-footer .song{
+        width: 25%;
+    }
+
+    #container-footer .song .song-cover{
+        height: 80%;
+    }
+    
+    #container-footer .song .song-cover img{
+        height: 80%;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    #container-footer .song .song-name h3{
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    
+    #container-footer .song .song-name p{
+        font-size: 9px;
+        margin-right: 5px;
+    }
+    
+    .song-save{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    
+    #container-footer .song .song-save .first{
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 5px;
+    }
+
+    /* MEDIA QUERY PER MODIFICARE COL CENTRALE DIMENSIONI */
+    #container-footer .controller{
+        width: 25%;
+        padding: 0px 2px;
+    }
+
+    #container-footer .controller .player-button ul li{
+        font-size: 15px;
+        padding: 0px 2px;
+        margin-bottom: 10px;
+    }
+
+    .big{
+        font-size: 25px;
+    }  
+
+     /* MEDIA QUERY PER MODIFICARE COL DX DIMENSIONI */
+    #container-footer .audio{
+        width: 25%;
+    }
+} 
 /* FINE RESPONSIVE CON MEDIA QUERY AL DI SOTTO DEI 600PX */
 
 
