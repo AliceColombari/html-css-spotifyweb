@@ -248,6 +248,11 @@ main{
     padding-top: 10px;
 }
 /* REGOLE MAIN CONTENT CONTAINER CREATE */
+.container-create{
+    display: flex;
+    flex-direction: column;
+}
+
 .container-create h2{
     color: #fff;
     padding-top: 20px;
@@ -263,6 +268,11 @@ main{
     margin-left: 20px;
   }
 /* REGOLE MAIN CONTENT CONTAINER ARTIST */
+.container-artist{
+    display: flex;
+    flex-direction: column;
+}
+
 .container-artist h2{
     color: #fff;
     padding-top: 20px;
@@ -277,7 +287,7 @@ main{
     margin-left: 20px;
   }
 
-  .container-artist .cover-rounded img{
+.container-artist .cover-rounded img{
     width: 100%;
     border-radius: 50%;
 }
