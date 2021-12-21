@@ -607,6 +607,10 @@ footer{
     .played-element{
         margin: 0px 10px;
     }
+    /* MEDIA QUERY ELEMENTI AL CENTRO + RIDIMENSIONAMENTO TESTO COVER */
+    .cover-text h3{
+        font-size: 12px;
+    }
     /* MEDIA QUERY PER MODIFICARE CONTENIORE FOOTER */
 }
 /* FINE RESPONSIVE CON MEDIA QUERY AL DI SOTTO DEI 600PX */
