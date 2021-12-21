@@ -162,6 +162,10 @@ main{
     color: #999;
 }
 
+.main-nav .bottom-nav .profile-nav {
+    line-height: 40px;
+}
+
 .main-nav .bottom-nav .profile-nav img{
     height: 30px;
     vertical-align: middle;
@@ -205,9 +209,22 @@ main{
 
 .main-content-nav ul li{
     font-size: 12px;
-    line-height: 50px;
+    padding: 20px 0px 5px 0px;
     margin: 0px 20px;
+    position: relative;
 }
+
+.main-content-nav .main-content-nav-list li a.active::after{
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* REGOLE MAIN CONTENT CONTAINER PLAYED */
 .container-played h2{
     color: #fff;
