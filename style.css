@@ -64,16 +64,13 @@ main{
     height: calc(100vh - 90px);
 }
 
-/* main{
-    height: 100%;
-} */
-
 .main-nav{
     width: 250px;
     height: 100%;
     background-color: #000;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 400px;
 }
 
 .logo-nav{
@@ -91,6 +88,16 @@ main{
     margin-right: 10px;
     vertical-align: middle;
     color: #999;
+}
+
+.top-nav{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-nav{
+    height: 90px;
 }
 /* REGOLE MAIN NAV MENU */
 .main-nav .menu-nav a:hover img{
@@ -138,7 +145,7 @@ main{
 
 .playlist-nav{
     overflow-y: auto;
-    min-height: 50px;
+    /* min-height: 50px; */
     padding: 0px 10px;
 }
 /* REGOLE MAIN NAV MENU PLAYLIST BOTTOM */
@@ -224,7 +231,6 @@ main{
     left: 50%;
     transform: translateX(-50%);
 }
-
 /* REGOLE MAIN CONTENT CONTAINER PLAYED */
 .container-played h2{
     color: #fff;
