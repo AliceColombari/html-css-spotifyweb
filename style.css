@@ -145,7 +145,6 @@ main{
 
 .playlist-nav{
     overflow-y: auto;
-    /* min-height: 50px; */
     padding: 0px 10px;
 }
 /* REGOLE MAIN NAV MENU PLAYLIST BOTTOM */
@@ -221,7 +220,7 @@ main{
     position: relative;
 }
 
-.main-content-nav .main-content-nav-list li a.active::after{
+.main-content-nav .main-content-nav-list li a.active-menu::after{
     content: "";
     height: 2px;
     width: 40px;
@@ -231,6 +230,18 @@ main{
     left: 50%;
     transform: translateX(-50%);
 }
+
+.main-content-nav .main-content-nav-list li a:hover::after{
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* REGOLE MAIN CONTENT CONTAINER PLAYED */
 .container-played h2{
     color: #fff;
@@ -251,12 +262,39 @@ main{
     
 }
 
-.played-element .cover img{
+.played-element .cover,
+.played-element .cover-rounded{
+    position: relative;
+}
+
+.played-element .cover img,
+.played-element .cover-rounded img{
     width: 100%;
+}
+
+.played-element .cover .img-layover,
+.played-element .cover-rounded .img-layover{
+    font-size: 70px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .played-element:hover{
     cursor: pointer;
+}
+
+.played-element:hover .cover img,
+.played-element:hover .cover-rounded img{
+    opacity: 0.5;
+}
+
+.played-element:hover .cover .img-layover,
+.played-element:hover .cover-rounded .img-layover{
+    display: block;
 }
 
 .played-element .cover-text h3{
@@ -740,7 +778,13 @@ footer{
 
 /* RESPONSIVE CON MEDIA QUERY AL DI SOTTO DEI 768PX */
 @media (max-width:768px){
-     /* MEDIA QUERY PER MODIFICARE CONTENIORE FOOTER */
+
+    /* MEDIA QUERY ELEMENTI AL CENTRO + RIDIMENSIONAMENTO TESTO COVER */
+    .cover-text h3{
+        font-size: 13px;
+    }
+
+    /* MEDIA QUERY PER MODIFICARE CONTENIORE FOOTER */
     /* MEDIA QUERY PER MODIFICARE CONTENIORE FOOTER RIDIMENSIONAMENTO 3 SPAZI */
     #container-footer .song{
         flex-grow: 1;
@@ -799,17 +843,17 @@ footer{
     /* MEDIA QUERY PER MODIFICARE COL CENTRALE DIMENSIONI */
     #container-footer .controller{
         width: 25%;
-        padding: 0px 2px;
+        padding: 0px 5px;
     }
 
     #container-footer .controller .player-button ul li{
-        font-size: 15px;
-        padding: 0px 2px;
+        font-size: 20px;
+        padding: 0px 5px;
         margin-bottom: 10px;
     }
 
     .big{
-        font-size: 25px;
+        font-size: 30px;
     }  
 
      /* MEDIA QUERY PER MODIFICARE COL DX DIMENSIONI */
