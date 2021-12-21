@@ -492,7 +492,7 @@ footer{
     color: #fff;
 }
 
-.active-bar .bar-point{
+.time-bar .bar-point{
     position: absolute;
     top: 50%;
     right: 0;
@@ -501,8 +501,17 @@ footer{
     height: 12px;
     border-radius: 50%;
     background-color: #fff;
+    display: none;
+}
+
+.time-bar:hover .bar-point{
     display: block;
 }
+
+.time-bar:hover .active-bar{
+    background-color: #94dd25;
+}
+
 /* FOOTER COL DX */
 #container-footer .audio{
     width: 20%;
@@ -565,7 +574,15 @@ footer{
     height: 12px;
     border-radius: 50%;
     background-color: #fff;
+    display: none;
+}
+
+.audio-bar:hover .bar-point{
     display: block;
+}
+
+.audio-bar:hover .active-bar{
+    background-color: #94dd25;
 }
 
 
