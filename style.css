@@ -298,6 +298,11 @@ footer{
     justify-content: space-between;
     /* text-align: center; */
 }
+
+.audio-bar:hover .active-bar{
+    color: #94dd25;
+}
+
 /* FOOTER COL SX */
 #container-footer .song{
     height: 100%;
